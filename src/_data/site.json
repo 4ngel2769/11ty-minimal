@@ -1,0 +1,10 @@
+{
+  "title": "My Personal Portfolio",
+  "description": "A showcase of my projects and blog posts.",
+  "url": "https://myportfolio.com",
+  "author": "Your Name",
+  "social": {
+    "twitter": "https://twitter.com/yourprofile",
+    "github": "https://github.com/yourprofile"
+  }
+}
