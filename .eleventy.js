@@ -5,10 +5,10 @@ module.exports = function (eleventyConfig) {
   // Copy assets to output
   eleventyConfig.addPassthroughCopy("src/assets");
   // Create collections
-  eleventyConfig.addCollection("projects", function(collectionApi) {
+  eleventyConfig.addCollection("projects", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/content/projects/*.md");
   });
-  eleventyConfig.addCollection("blog", function(collectionApi) {
+  eleventyConfig.addCollection("blog", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/content/blog/*.md");
   });
   return {
@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes",
-      layouts: "_includes/layouts"
-    }
+      layouts: "_includes/layouts",
+    },
   };
 };
