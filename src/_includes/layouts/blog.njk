@@ -1,6 +1,10 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
 <h1>{{ title }}</h1>
+<p>{{ description }}</p>
+{# <div class="page-content">
+  {{ content | safe }}
+</div> #}
 <ul>
   {% for post in collections.blog %}
     <li>
