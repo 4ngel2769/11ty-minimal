@@ -5,15 +5,16 @@ layout: home.njk
 
 # Hi, I'm Angel, Cybersecurity Researcher & Embedded Systems Developer
 
-I specialize in cybersecurity, ethical hacking, and embedded systems development, with extensive experience in Docker, virtual environments, networking, and server management.  
-My work involves uncovering vulnerabilities, creating secure devices, and developing innovative solutions using ESP32 microcontrollers.
+<> I specialize in cybersecurity, ethical hacking, and embedded systems development, with extensive experience in Docker, virtual environments, networking, and server management.  
+<> My work involves uncovering vulnerabilities, creating secure devices, and developing innovative solutions using ESP32 microcontrollers.
 
 ---
 
 ### my projects
 
-I enjoy building things. Whether that's radio tools, scripts, hacking devices, applications, or anything in between.
+<> I enjoy building things. Whether that's radio tools, scripts, hacking devices, applications, or anything in between.
 
+<div class="list-pad">
 <ul>
 {% for project in collections.latestProjects %}
   <li>
@@ -24,13 +25,15 @@ I enjoy building things. Whether that's radio tools, scripts, hacking devices, a
 {% endfor %}
 </ul>
 <a href="/projects" style="display:inline-block;margin-top:0.5rem;">See more projects →</a>
+</div>
 
 ---
 
 ### blog
 
-Read my thoughts and insights:
+<> Read my thoughts and insights:
 
+<div class="list-pad">
 <ul>
 {% for post in collections.latestBlog %}
   <li>
@@ -43,3 +46,4 @@ Read my thoughts and insights:
 {% endfor %}
 </ul>
 <a href="/blog" style="display:inline-block;margin-top:0.5rem;">See more blog posts →</a>
+</div>
