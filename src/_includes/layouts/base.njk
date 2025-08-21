@@ -18,30 +18,36 @@
   <style>
     /* ---------- CSS Variables ---------- */
     :root {
-      --bg:#fffed7ff;
-      --text:#222;
-      --border:#eee;
-      --footer-bg:#fdffe8ff;
-      --footer-text:#555;
-      --footer-link-bg:#202224ff;
-      --link:#222;
-      --link-hover:#7e7e7eff;
-      --list-border:#f0f0f0;
-      --decoration-color:#212121ff;
-      --ease:0.25s;
-      --max-width:600px;
+      --bg: #fffed7ff;
+      --text: #222;
+      --border: #eee;
+      --footer-bg: #fdffe8ff;
+      --footer-text: #555;
+      --footer-link-bg: #202224ff;
+      --header-bg: #fff9c5ff;
+      --header-text: #303132ff;
+      --header-link-bg: #f5d693ff;
+      --link: #222;
+      --link-hover: #7e7e7eff;
+      --list-border: #f0f0f0;
+      --decoration-color: #212121ff;
+      --ease: 0.25s;
+      --max-width: 600px;
     }
     [data-theme="dark"] {
-      --bg:#141517ff;
-      --text:#eaeaea;
-      --border:#687075;
-      --footer-bg:#0c0c0cff;
-      --footer-text:#9fa3a5ff;
-      --footer-link-bg:#393d3eff;
-      --link:#eaeaea;
-      --link-hover:#a5ff5b;
-      --list-border:#23272a;
-      --decoration-color:#c8c8c8ff;
+      --bg: #101112ff;
+      --text: #eaeaea;
+      --border: #687075;
+      --footer-bg: #0c0c0cff;
+      --footer-text: #9fa3a5ff;
+      --footer-link-bg: #393d3eff;
+      --header-bg: #0c0c0cff;
+      --header-text: #dadadaff;
+      --header-link-bg: #393d3eff;
+      --link: #eaeaea;
+      --link-hover: #a5ff5b;
+      --list-border: #23272a;
+      --decoration-color: #c8c8c8ff;
     }
 
     /* ---------- Base ---------- */
@@ -96,6 +102,13 @@
     .footer-groups a { display:inline-block; padding:.15rem .35rem; border-radius:4px; }
     .footer-groups a:hover { background:var(--footer-link-bg); color:var(--link-hover); }
     .footer-copy { grid-column:1; grid-row:2; align-self:end; font-size:.75rem; opacity:.65; text-align:left; margin-top:1rem; }
+
+    /* ----------- Header ----------- */
+    header { background: var(--header-bg); color: var(--header-text); border-bottom: 1px solid var(--border); }
+    header a { color: var(--header-text); text-decoration: none; padding: 0 .2em; border-radius: 2px; transition: background var(--ease), color var(--ease); }
+    header a:hover { background: var(--header-link-bg); color: var(--link-hover); }
+    .site-header .header-bar { background: transparent; }
+    .site-header h1 a { color: var(--header-text); }
 
     /* ---------- Utilities ---------- */
     .excerpt { margin:.25rem 0 0; font-size:.8em; color:var(--footer-text); line-height:1.3; }

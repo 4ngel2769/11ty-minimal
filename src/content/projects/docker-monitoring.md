@@ -24,7 +24,3 @@ A monitoring dashboard for Docker containers that provides real-time insights in
 - Chart.js for data visualization
 - WebSocket for real-time updates
 - Bootstrap for responsive UI
-
-### Links
-
-- [GitHub Repository](https://github.com/yourusername/docker-monitoring)
