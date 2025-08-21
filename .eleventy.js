@@ -1,9 +1,6 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-
-  // Only keep the full date format filter
   eleventyConfig.addFilter("dateFull", (d) => {
     if (!d) return "";
     const dt = new Date(d);
@@ -14,36 +11,28 @@ module.exports = function (eleventyConfig) {
       year: "numeric",
     });
   });
-
-  // If you only have fonts left under assets/fonts you can narrow (optional)
-  eleventyConfig.addPassthroughCopy("src/assets");
-
   eleventyConfig.addCollection("projects", (api) => {
     return api
       .getFilteredByGlob("src/content/projects/*.md")
       .sort((a, b) => (b.date || 0) - (a.date || 0));
   });
-
   eleventyConfig.addCollection("blog", (api) => {
     return api
       .getFilteredByGlob("src/content/blog/*.md")
       .sort((a, b) => b.date - a.date);
   });
-
   eleventyConfig.addCollection("latestProjects", (api) => {
     return api
       .getFilteredByGlob("src/content/projects/*.md")
       .sort((a, b) => (b.date || 0) - (a.date || 0))
       .slice(0, 3);
   });
-
   eleventyConfig.addCollection("latestBlog", (api) => {
     return api
       .getFilteredByGlob("src/content/blog/*.md")
       .sort((a, b) => b.date - a.date)
       .slice(0, 3);
   });
-
   return {
     dir: {
       input: "src",
