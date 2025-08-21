@@ -10,27 +10,36 @@ My work involves uncovering vulnerabilities, creating secure devices, and develo
 
 ---
 
-### MY PROJECTS
+### my projects
 
-I enjoy building things. Whether that's radio tools, scripts, hacking devices, applications, or anything in between.  
-Take a look at my arsenal of projects:
+I enjoy building things. Whether that's radio tools, scripts, hacking devices, applications, or anything in between.
 
 <ul>
-{% for project in collections.projects | reverse | slice(0, 3) %}
-  <li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
+{% for project in collections.latestProjects %}
+  <li>
+    <a href="{{ project.url }}">{{ project.data.title }}</a>
+    {% if project.date %}<div class="excerpt"><small>{{ project.date | dateFull }}</small></div>{% endif %}
+    {% if project.data.excerpt %}<div class="excerpt">{{ project.data.excerpt }}</div>{% endif %}
+  </li>
 {% endfor %}
 </ul>
 <a href="/projects" style="display:inline-block;margin-top:0.5rem;">See more projects →</a>
 
 ---
 
-### BLOG
+### blog
 
 Read my thoughts and insights:
 
 <ul>
-{% for post in collections.blog | reverse | slice(0, 3) %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{% for post in collections.latestBlog %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <div class="excerpt">
+      {% if post.date %}<small>{{ post.date | dateFull }}</small>{% endif %}
+      {% if post.data.excerpt %}{% if post.date %} · {% endif %}{{ post.data.excerpt }}{% endif %}
+    </div>
+  </li>
 {% endfor %}
 </ul>
 <a href="/blog" style="display:inline-block;margin-top:0.5rem;">See more blog posts →</a>

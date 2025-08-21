@@ -1,7 +1,9 @@
 ---
 title: Project 2
+excerpt: Example project solving a sample problem with clean structure.
 layout: project.njk
 permalink: /projects/project-2/
+date: 2025-08-12
 ---
 
 Project 2 is designed to demonstrate [specific features or technologies used]. It aims to solve [specific problem or need] and provides [key functionalities or benefits].
@@ -26,4 +28,4 @@ To get started with Project 2, follow these steps:
 2. Install the dependencies.
 3. Run the application.
 
-For more detailed instructions, refer to the [documentation](link-to-documentation).
+For more detailed instructions, refer to the [documentation](https://example.com/link-to-documentation).

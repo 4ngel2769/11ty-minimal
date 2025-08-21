@@ -5,28 +5,30 @@ This is a personal portfolio website built using the 11ty (Eleventy) static site
 ## Features
 
 - **Projects Page**: Accessible at `/projects`, this page lists all projects. Each project links to its own page at `/projects/<slug-of-project>`, where visitors can read more about the project.
-  
 - **Blog Page**: Accessible at `/blog`, this page lists all blog posts. Each blog post links to its own page at `/blog/<blog-slug>`, where visitors can read the full post.
 
 ## Setup Instructions
 
-1. **Clone the Repository**: 
+1. **Clone the Repository**:
+
    ```
    git clone <repository-url>
    cd ac.tech.11ty-minimal
    ```
 
-2. **Install Dependencies**: 
+2. **Install Dependencies**:
+
    ```
    npm install
    ```
 
-3. **Run the Development Server**: 
+3. **Run the Development Server**:
+
    ```
    npm run start
    ```
 
-4. **Build the Project**: 
+4. **Build the Project**:
    ```
    npm run build
    ```

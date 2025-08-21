@@ -1,7 +1,9 @@
 ---
 title: Markdown Notes
+excerpt: Local-first markdown note editor with live preview.
 layout: project.njk
 permalink: /projects/markdown-notes/
+date: 2025-08-15
 ---
 
 A lightweight note-taking app that lets you write and save notes in Markdown format.

@@ -1,12 +1,15 @@
 {% extends "layouts/base.njk" %}
-
 {% block content %}
 <h1>My Projects</h1>
 <ul>
-    {% for project in collections.projects %}
-        <li>
-            <a href="{{ project.url }}">{{ project.data.title }}</a>
-        </li>
-    {% endfor %}
+  {% for project in collections.projects %}
+    <li>
+      <a href="{{ project.url }}">{{ project.data.title }}</a>
+      <div class="excerpt">
+        {% if project.date %}<small>{{ project.date | dateFull }}</small>{% endif %}
+        {% if project.data.excerpt %}{% if project.date %} · {% endif %}{{ project.data.excerpt }}{% endif %}
+      </div>
+    </li>
+  {% endfor %}
 </ul>
 {% endblock %}

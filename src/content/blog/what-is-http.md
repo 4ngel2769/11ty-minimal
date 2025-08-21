@@ -1,5 +1,6 @@
 ---
 title: What is HTTP?
+excerpt: Overview of the stateless protocol powering the web.
 layout: blogs.njk
 permalink: /blog/what-is-http/
 date: 2025-08-21

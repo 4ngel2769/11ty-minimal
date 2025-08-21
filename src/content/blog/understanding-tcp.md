@@ -1,5 +1,6 @@
 ---
 title: Understanding TCP
+excerpt: How TCP guarantees reliable ordered data delivery.
 layout: blogs.njk
 permalink: /blog/understanding-tcp/
 date: 2025-08-21

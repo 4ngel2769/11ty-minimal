@@ -1,11 +1,8 @@
-{% include "components/header.njk" %}
-<main>
-    {% extends "layouts/base.njk" %}
-    {% block content %}
-        <article>
-            <h1>{{ title }}</h1>
-            <div>{{ content | safe }}</div>
-        </article>
-    {% endblock %}
-</main>
-{% include "components/footer.njk" %}
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article>
+    <h1>{{ title }}</h1>
+    <div>{{ content | safe }}</div>
+</article>
+{% endblock %}
