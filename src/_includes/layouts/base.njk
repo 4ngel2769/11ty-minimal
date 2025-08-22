@@ -3,9 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="{{ description or site.description }}">
   <title>{{ title or site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  {# --- SEO & Social Meta Tags --- #}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ page.url | url or site.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ site.url }}/assets/favicon.ico">
+  <meta name="theme-color" content="{{ site.embedColor }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title or site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/favicon.ico">
+  <meta name="twitter:site" content="@angeldev0">
+  <meta name="twitter:creator" content="@angeldev0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="msapplication-TileColor" content="{{ site.embedColor }}">
+  <meta name="theme-color" content="{{ site.embedColor }}">
+
   <script>
     /* Early theme paint */
     (function () {
