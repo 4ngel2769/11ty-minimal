@@ -1,19 +1,17 @@
 {
-  "name": "ac.tech.11ty-minimal",
+  "name": "11ty-minimal",
   "version": "1.0.0",
-  "description": "A minimal personal portfolio website built with 11ty.",
+  "description": "A minimalistic personal portfolio website built with 11ty.",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
     "test": "npm run build"
   },
-  "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
-  },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1"
   },
-  "author": "Your Name",
+  "author": "4ngel2769",
   "license": "MIT"
 }
