@@ -3,6 +3,16 @@
    <p>This is a minimalistic, personal portfolio website built using the 11ty (Eleventy) static site generator. The website features a projects page and a blog page, both of which are populated with content from markdown files.</p>
 </div>
 
+<div align="center">
+   <a href="https://11ty.sites.angellabs.xyz/" target="_blank" rel="noopener noreferrer">
+      <img src="https://skillicons.dev/icons?i=appwrite" alt="Live Demo" />
+      <div>
+         <div>Live Demo</div>
+         <div>Powered by AppWrite</div>
+      </div>
+   </a>
+</div>
+
 ## Features
 
 - **Projects Page**: Accessible at `/projects`, this page lists all projects. Each project links to its own page at `/projects/<slug>`, where visitors can read more about the project.
