@@ -11,7 +11,7 @@ My work involves uncovering vulnerabilities, creating secure devices, and develo
 
 ---
 
-### my projects
+## // My Projects
 
 I enjoy building things. Whether that's radio tools, scripts, hacking devices, applications, or anything in between.
 
@@ -30,7 +30,7 @@ I enjoy building things. Whether that's radio tools, scripts, hacking devices, a
 
 ---
 
-### blog
+## // Blog
 
 Read my thoughts and insights:
 
