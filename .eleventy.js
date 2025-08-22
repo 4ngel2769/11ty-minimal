@@ -12,6 +12,10 @@ module.exports = function (eleventyConfig) {
       year: "numeric",
     });
   });
+  eleventyConfig.addFilter("stripSlashes", function(title) {
+    if (!title) return "";
+    return title.replace(/^\/\/\s*/, "");
+  });
   eleventyConfig.addCollection("projects", (api) => {
     return api
       .getFilteredByGlob("src/content/projects/*.md")
