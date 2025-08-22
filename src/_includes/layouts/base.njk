@@ -38,50 +38,62 @@
   <style>
     /* ---------- CSS Variables ---------- */
     :root {
-      --bg: #fffed7ff;
+      --bg: #fdffe8;
       --text: #222;
-      --border: #383838ff;
-      --footer-bg: #fdffe8ff;
+      --text-main: #222;
+      --text-heading: #1a1a1a;
+      --text-subheading: #7a5c1b;
+      --text-paragraph: #3a3a3a;
+      --border: #383838;
+      --footer-bg: #fffbd7;
       --footer-text: #555;
-      --footer-link-bg: #f5d693ff;
-      --header-bg: #fff9c5ff;
-      --header-text: #303132ff;
-      --header-link-bg: #f5d693ff;
+      --footer-link-bg: #f5d693;
+      --header-bg: #fffbd7;
+      --header-text: #303132;
+      --header-link-bg: #f5d693;
       --link: #222;
-      --link-hover: #242424ff;
+      --link-hover: #242424;
       --list-border: #f0f0f0;
-      --decoration-color: #212121ff;
-      --selection: #423a29ff;
+      --code-bg: #f4efc7ff;
+      --code-text: #1d201b;
+      --decoration-color: #212121;
+      --selection: #423a29;
       --ease: 0.25s;
       --max-width: 600px;
     }
     [data-theme="dark"] {
-      --bg: #101112ff;
-      --text: #e7e7e7ff;
+      --bg: #101112;
+      --text: #e7e7e7;
+      --text-main: #e7e7e7;
+      --text-heading: #fffbe0;
+      --text-subheading: #ffe08a;
+      --text-paragraph: #bdbdbd;
       --border: #687075;
-      --footer-bg: #0c0c0cff;
-      --footer-text: #9fa3a5ff;
-      --footer-link-bg: #393d3eff;
-      --header-bg: #0c0c0cff;
-      --header-text: #dadadaff;
-      --header-link-bg: #646a6bff;
+      --footer-bg: #0c0c0c;
+      --footer-text: #9fa3a5;
+      --footer-link-bg: #393d3e;
+      --header-bg: #0c0c0c;
+      --header-text: #dadada;
+      --header-link-bg: #646a6b;
       --link: #eaeaea;
       --link-hover: #a5ff5b;
       --list-border: #23272a;
-      --decoration-color: #c8c8c8ff;
-      --selection: #f1dbabff;
+      --code-bg: #2e2e29;
+      --code-text: #daffbd;
+      --decoration-color: #c8c8c8;
+      --selection: #f1dbab;
     }
 
     /* ---------- Base ---------- */
     * { box-sizing:border-box; }
-    html,body { height:100%; margin:0; padding:0; font-family:Sen,system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,sans-serif; background:var(--bg); color:var(--text); }
+    html,body { height:100%; margin:0; padding:0; font-family:Sen,system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,sans-serif; background:var(--bg); color:var(--text-main); }
     input,textarea { height:100%; margin:0; padding:0; font-family:monospace; color:var(--text); }
     body { min-height:100vh; display:flex; flex-direction:column; }
     a { color:var(--link); text-decoration:var(--decoration-color) solid underline; transition:color var(--ease); }
     a:hover { color:var(--link-hover); }
-    h1 { font-size:2rem; margin:1.5rem 0 1rem; font-weight:600; }
-    h2,h3 { margin:1.5rem 0 1rem; font-weight:500; }
-    p { margin:1rem 0; }
+    h1 { font-size:2rem; margin:1.5rem 0 1rem; font-weight:700; color:var(--text-heading); }
+    h2,h3 { margin:1.5rem 0 1rem; font-weight:600; color:var(--text-subheading); }
+    p { margin: 1rem 0 1rem 0; color:var(--text-paragraph); }
     ul { list-style:none; padding:0; margin:0; }
     li { margin:.75rem 0; padding:.5rem 0; border-bottom:1px solid var(--list-border); }
     li:last-child { border-bottom:none; }
@@ -151,6 +163,12 @@
     .indent { padding-left:1rem; }
     .list-pad ul { padding-left:1rem; }
     ::selection { background: var(--selection); color: var(--bg); }
+    code { background: var(--code-bg); color: var(--code-text); padding: 0.2em 0.4em; border-radius: 4px; }
+    pre { background: var(--code-bg); color: var(--code-text); border: 1.5px solid var(--border); border-radius: 8px; padding: 1em 1.2em; margin: 1.5em 0; font-size: 1em; }
+    pre code { background: none !important; color: inherit; padding: 0; border-radius: 0; font-family: inherit; font-size: inherit; display: block; white-space: pre; }
+
+    .location-row { display: flex; align-items: center; gap: 0.5em; font-size: 1.15em; font-weight: 500; color: var(--text); }
+    .location-row svg { display: inline-block; vertical-align: middle; width: 1em; height: 1em; stroke: currentColor; }
 
     /* ---------- Responsive ---------- */
     @media (max-width:700px) {

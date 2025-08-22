@@ -1,6 +1,7 @@
 module.exports = {
   title: "angeldev0", // Site title
   author: "angeldev0", // Your name
+  location: "Earth, Milky Way", // Your location
   description: "Explore Angel Capra's projects in cybersecurity, IoT development, and embedded systems. As a passionate cybersecurity student, I showcase a diverse portfolio from hacking devices with ESP32 and Arduino to creating innovative tech solutions. Discover the intersection of cybersecurity and IoT technology, and find fascinating projects that push the boundaries of tech innovation.", // Website SEO description
   url: "https://angeldev0.pages.dev", // Website url
   social: {
