@@ -1,6 +1,7 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+  eleventyConfig.addPassthroughCopy({ "src/assets/_favicon_.ico": "/assets/favicon.ico" });
   eleventyConfig.addFilter("dateFull", (d) => {
     if (!d) return "";
     const dt = new Date(d);
