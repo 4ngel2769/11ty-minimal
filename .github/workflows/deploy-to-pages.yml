@@ -3,7 +3,7 @@ name: Deploy Eleventy site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["demo"]
   workflow_dispatch:
 
 permissions:
