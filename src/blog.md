@@ -1,6 +1,6 @@
 ---
 title: // Blogs
-description: The content on this page is a sample collection of unreal blog posts. They are used for demonstration purposes only.
+description: This is a demo collection of blog posts. These posts are for demonstration only.
 layout: blog.njk
 permalink: /blog/
 ---
