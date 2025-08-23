@@ -27,7 +27,7 @@ The website is designed to be minimalistic, with a focus on loading speed. The C
 1. **Clone the Repository**:
 
    ```
-   git clone https://github.com/4ngel2769/11ty-minimal.git
+   git clone -b demo --single-branch https://github.com/4ngel2769/11ty-minimal.git
    cd 11ty-minimal
    ```
 
