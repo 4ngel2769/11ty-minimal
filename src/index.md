@@ -28,8 +28,10 @@ I enjoy building things. Whether that's radio tools, scripts, hacking devices, a
 {% for project in collections.latestProjects %}
   <li>
     <a href="{{ project.url }}">{{ project.data.title }}</a>
-    {% if project.date %}<div class="excerpt"><small>{{ project.date | dateFull }}</small></div>{% endif %}
-    {% if project.data.excerpt %}<div class="excerpt">{{ project.data.excerpt }}</div>{% endif %}
+    <div class="excerpt">
+    {% if project.date %}<small>{{ project.date | dateFull }}</small>{% endif %}
+    {% if project.data.excerpt %}{% if project.date %} · {% endif %}{{ project.data.excerpt }}{% endif %}
+    </div>
   </li>
 {% endfor %}
 </ul>
